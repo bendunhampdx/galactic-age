@@ -3,6 +3,8 @@ export class GalacticAge {
     this.age = age;
     this.lifeExpectency = lifeExpectency;
     this.earthLife = 0;
+    this.venusLife = 0;
+
   }
 
   getEarthAge() {
@@ -31,7 +33,15 @@ export class GalacticAge {
     return this.earthLife = this.lifeExpectency - this.age;
     }
   getMercuryLifeLeft() {
-      
+    this.age = this.age * .24;
+    this.lifeExpectency = this.lifeExpectency * .24;
+    return this.mercuryLife = this.lifeExpectency - this.age;
+    }
+
+  getVenusLifeLeft() {
+    // this.age = this.age * .62;
+    // this.lifeExpectency = this.lifeExpectency * .62;
+    // return this.venusLife = this.lifeExpectency - this.age;
     }
 };
 
