@@ -4,24 +4,29 @@ describe('GalacticAge', () => {
 
   test('should correctly determine age on Earth', () => {
     const earth = new GalacticAge(34, 80);
-    expect(earth.getEarthAge()).toBeCloseTo(34);
+    earth.getEarthLifeLeft();
+    expect(earth.earthAge).toBeCloseTo(34);
   })
 
   test('should correctly determine users age on Mercury', () => {
     const mercury = new GalacticAge(34, 80);
-    expect(mercury.getMercuryAge()).toBeCloseTo(8.16);
+    mercury.getMercuryLifeLeft();
+    expect(mercury.mercuryAge).toBeCloseTo(8.16);
   })
   test('should correctly determine users age on venus', () => {
     const venus = new GalacticAge(34, 80);
-    expect(venus.getVenusAge()).toBeCloseTo(21.08);
+    venus.getVenusLifeLeft();
+    expect(venus.venusAge).toBeCloseTo(21.08);
   })
   test('should correctly determine users age on mars', () => {
     const mars = new GalacticAge(34, 80);
-    expect(mars.getMarsAge()).toBeCloseTo(63.92);
+    mars.getMarsLifeLeft();
+    expect(mars.marsAge).toBeCloseTo(63.92);
   })
   test('should correctly determine users age on jupiter', () => {
     const jupiter = new GalacticAge(34, 80);
-    expect(jupiter.getJupiterAge()).toBeCloseTo(403.24);
+    jupiter.getJupiterLifeLeft();
+    expect(jupiter.jupiterAge).toBeCloseTo(403.24);
   })
 
   test('should correctly determine life left on earth', () => {

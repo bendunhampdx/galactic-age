@@ -2,74 +2,59 @@ export class GalacticAge {
   constructor(age, lifeExpectency) {
     this.age = age;
     this.lifeExpectency = lifeExpectency;
+    this.earthAge = 0;
+    this.mercuryAge = 0;
+    this.venusAge = 0;
+    this.marsAge = 0;
+    this.jupiterAge = 0;
   }
 
-  getEarthAge() {
-    this.age = this.age *1;
-    return this.age
-  };
-  getMercuryAge() {
-    this.age = this.age * .24;
-    return this.age
-  };
-  getVenusAge() {
-    this.age = this.age * .62;
-    return this.age
-  };
-  getMarsAge() {
-    this.age = this.age * 1.88;
-    return this.age
-  };
-  getJupiterAge() {
-    this.age = this.age * 11.86;
-    return this.age
-  };
 
   getEarthLifeLeft() {
-    this.age = this.age * 1;
+    this.earthAge = this.age * 1;
     this.lifeExpectency = this.lifeExpectency * 1;
-    if (this.lifeExpectency < this.age) {
-    return (this.lifeExpectency - this.age) * -1;
+    if (this.lifeExpectency < this.earthAge) {
+    return (this.lifeExpectency - this.earthAge) * -1;
     } else {
-      return this.lifeExpectency - this.age;
+      return this.lifeExpectency - this.earthAge;
     }
   };
   getMercuryLifeLeft() {
-    this.age = this.age * .24;
+    this.mercuryAge = this.age * .24;
     this.lifeExpectency = this.lifeExpectency * .24;
-    if (this.lifeExpectency < this.age) {
-    return (this.lifeExpectency - this.age) * -1;
+    if (this.lifeExpectency < this.mercuryAge) {
+    return (this.lifeExpectency - this.mercuryAge) * -1;
     } else {
-      return this.lifeExpectency - this.age;
+      return this.lifeExpectency - this.mercuryAge;
     }
   };
 
   getVenusLifeLeft() {
-    this.age = this.age * .62;
+    this.venusAge = this.age * .62;
     this.lifeExpectency = this.lifeExpectency * .62;
-    if (this.lifeExpectency < this.age) {
-      return (this.lifeExpectency - this.age) * -1;
+    if (this.lifeExpectency < this.venusAge) {
+      return (this.lifeExpectency - this.venusAge) * -1;
       } else {
-        return this.lifeExpectency - this.age;
+        return this.lifeExpectency - this.venusAge;
       }
     };
 
   getMarsLifeLeft() {
-    this.age = this.age * 1.88;
+    this.marsAge = this.age * 1.88;
     this.lifeExpectency = this.lifeExpectency * 1.88;
-    if (this.lifeExpectency < this.age) {
-      return (this.lifeExpectency - this.age) * -1;
+    if (this.lifeExpectency < this.marsAge) {
+      return (this.lifeExpectency - this.marsAge) * -1;
       } else {
-        return this.lifeExpectency - this.age;
+        return this.lifeExpectency - this.marsAge;
       }
   };
   getJupiterLifeLeft() {
-    this.age = this.age * 11.86;
+    this.jupiterAge = this.age * 11.86;
     this.lifeExpectency = this.lifeExpectency * 11.86;
-    if (this.lifeExpectency < this.age) {
-      return (this.lifeExpectency - this.age) * -1;
+    if (this.lifeExpectency < this.jupiterAge) {
+      return (this.lifeExpectency - this.jupiterAge) * -1;
       } else {
-        return this.lifeExpectency - this.age;
+        return this.lifeExpectency - this.jupiterAge;
       }
   }
 };
