@@ -5,6 +5,7 @@ export class GalacticAge {
     this.earthLife = 0;
     this.venusLife = 0;
     this.marsLife = 0;
+    this.jupiterLife = 0;
   }
 
   getEarthAge() {
@@ -49,13 +50,10 @@ export class GalacticAge {
     this.lifeExpectency = this.lifeExpectency * 1.88;
     return this.marsLife = this.lifeExpectency - this.age;
   };
-  getMarsLifeLeft() {
-    this.age = this.age * 1.88;
-    this.lifeExpectency = this.lifeExpectency * 1.88;
-    return this.marsLife = this.lifeExpectency - this.age;
-  };
   getJupiterLifeLeft() {
-    
+    this.age = this.age * 11.86;
+    this.lifeExpectency = this.lifeExpectency * 11.86;
+    return this.jupiterLife = this.lifeExpectency - this.age;
     
   }
 };
