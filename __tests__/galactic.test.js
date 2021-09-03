@@ -2,8 +2,8 @@ import { GalacticAge } from './../src/js/galactic.js';
 
 describe('GalacticAge', () => {
 
-  test('should correctly create a galacticAge object', () => {
-    const earth = new GalacticAge("earth", 34);
+  test('should correctly determine age on Earth', () => {
+    const earth = new GalacticAge("earth", 34, 80);
     expect(earth.planet).toEqual("earth");
     expect(earth.getAge()).toBeCloseTo(34);
   })
@@ -27,5 +27,11 @@ describe('GalacticAge', () => {
     const jupiter = new GalacticAge("jupiter", 34);
     expect(jupiter.planet).toEqual("jupiter");
     expect(jupiter.getAge()).toBeCloseTo(403.24);
+  })
+
+  test('should correctly determine life expectency on Earth', () => {
+    const earth = new GalacticAge("earth", 34, 80);
+    expect(earth.planet).toEqual("earth");
+    expect(earth.getLife()).toBeCloseTo(34);
   })
 })

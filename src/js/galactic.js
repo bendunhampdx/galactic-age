@@ -1,7 +1,8 @@
 export class GalacticAge {
-  constructor(planet, age) {
+  constructor(planet, age, lifeExpectency ) {
     this.planet = planet;
     this.age = age;
+    this.lifeExpectency = lifeExpectency;
    
   }
 
@@ -16,7 +17,13 @@ export class GalacticAge {
       return this.age * 1.88;
     } else if (this.planet === "jupiter") {
       return this.age * 11.86;
+    } else {
+      return this.age;
     }
   };
+
+  getLife() {
+    
+  }
 };
 
