@@ -10,7 +10,7 @@ export class GalacticAge {
   }
 
 
-  getEarthLifeLeft() {
+  earth() {
     this.earthAge = this.age * 1;
     this.lifeExpectency = this.lifeExpectency * 1;
     if (this.lifeExpectency < this.earthAge) {
@@ -19,7 +19,7 @@ export class GalacticAge {
       return this.lifeExpectency - this.earthAge;
     }
   };
-  getMercuryLifeLeft() {
+  mercury() {
     this.mercuryAge = this.age * .24;
     this.lifeExpectency = this.lifeExpectency * .24;
     if (this.lifeExpectency < this.mercuryAge) {
@@ -29,7 +29,7 @@ export class GalacticAge {
     }
   };
 
-  getVenusLifeLeft() {
+  venus() {
     this.venusAge = this.age * .62;
     this.lifeExpectency = this.lifeExpectency * .62;
     if (this.lifeExpectency < this.venusAge) {
@@ -39,7 +39,7 @@ export class GalacticAge {
       }
     };
 
-  getMarsLifeLeft() {
+  mars() {
     this.marsAge = this.age * 1.88;
     this.lifeExpectency = this.lifeExpectency * 1.88;
     if (this.lifeExpectency < this.marsAge) {
@@ -48,7 +48,7 @@ export class GalacticAge {
         return this.lifeExpectency - this.marsAge;
       }
   };
-  getJupiterLifeLeft() {
+  jupiter() {
     this.jupiterAge = this.age * 11.86;
     this.lifeExpectency = this.lifeExpectency * 11.86;
     if (this.lifeExpectency < this.jupiterAge) {
