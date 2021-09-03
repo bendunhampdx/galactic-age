@@ -14,6 +14,8 @@ export class GalacticAge {
       return this.age * .62;
     } else if (this.planet === "mars") {
       return this.age * 1.88;
+    } else if (this.planet === "jupiter") {
+      return this.age * 11.86;
     }
   };
 };
