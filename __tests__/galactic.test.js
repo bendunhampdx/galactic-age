@@ -7,6 +7,8 @@ describe('GalacticAge', () => {
   beforeEach(() => {
     user = new GalacticAge(34, 80)
   });
+
+  
   test('should correctly determine age on Earth', () => {
     user.earth();
     expect(user.earthAge).toBeCloseTo(34);
