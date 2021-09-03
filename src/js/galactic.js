@@ -70,8 +70,11 @@ export class GalacticAge {
   getJupiterLifeLeft() {
     this.age = this.age * 11.86;
     this.lifeExpectency = this.lifeExpectency * 11.86;
-    return this.jupiterLife = this.lifeExpectency - this.age;
-    
+    if (this.lifeExpectency < this.age) {
+      return this.jupiterLife = (this.lifeExpectency - this.age) * -1;
+      } else {
+        return this.jupiterLife = this.lifeExpectency - this.age;
+      }
   }
 };
 
