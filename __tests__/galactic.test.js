@@ -44,6 +44,10 @@ describe('GalacticAge', () => {
     const venus = new GalacticAge(34, 80);
     expect(venus.getVenusLifeLeft()).toBeCloseTo(28.52);
   })
+  test('should correctly determine years lived past life expec. venus', () => {
+    const venus = new GalacticAge(84, 80);
+    expect(venus.getVenusLifeLeft()).toBeCloseTo(2.48);
+  })
   test('should correctly determine life left on mars', () => {
     const mars = new GalacticAge(34, 80);
     expect(mars.getMarsLifeLeft()).toBeCloseTo(86.48);
