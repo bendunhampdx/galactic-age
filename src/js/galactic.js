@@ -41,7 +41,11 @@ export class GalacticAge {
   getMercuryLifeLeft() {
     this.age = this.age * .24;
     this.lifeExpectency = this.lifeExpectency * .24;
-    return this.mercuryLife = this.lifeExpectency - this.age;
+    if (this.lifeExpectency < this.age) {
+    return this.mercuryLife = (this.lifeExpectency - this.age) * -1;
+    } else {
+      return this.earthLife = this.lifeExpectency - this.age;
+    }
   };
 
   getVenusLifeLeft() {
