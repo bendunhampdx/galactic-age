@@ -23,7 +23,9 @@ export class GalacticAge {
   };
 
   getLife() {
-    
+    if (this.planet === "earth") {
+      return this.lifeExpectency * 1;
+    }
   }
 };
 
