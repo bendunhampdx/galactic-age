@@ -1,5 +1,6 @@
 export class GalacticAge {
-  constructor(age) {
+  constructor(planet, age) {
+    this.planet = planet;
     this.age = age;
     // this.venusAge = venusAge;
   }
