@@ -28,9 +28,17 @@ describe('GalacticAge', () => {
     const earth = new GalacticAge(34, 80);
     expect(earth.getEarthLifeLeft()).toBeCloseTo(46);
   })
+  test('should correctly determine years lived past life expec. earth', () => {
+    const earth = new GalacticAge(84, 80);
+    expect(earth.getEarthLifeLeft()).toBeCloseTo(4);
+  })
   test('should correctly determine life left on mercury', () => {
     const mercury = new GalacticAge(34, 80);
     expect(mercury.getMercuryLifeLeft()).toBeCloseTo(11.04);
+  })
+  test('should correctly determine years lived past life expec. mercury', () => {
+    const mercury = new GalacticAge(84, 80);
+    expect(mercury.getMercuryLifeLeft()).toBeCloseTo(.96);
   })
   test('should correctly determine life left on venus', () => {
     const venus = new GalacticAge(34, 80);
