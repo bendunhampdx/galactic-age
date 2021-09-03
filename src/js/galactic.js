@@ -11,8 +11,10 @@ export class GalacticAge {
     } else if (this.planet === "mercury") {
       return this.age * .24;
     } else if (this.planet === "venus") {
-      return this.age * .62
-    } 
+      return this.age * .62;
+    } else if (this.planet === "mars") {
+      return this.age * 1.88;
+    }
   };
 };
 
