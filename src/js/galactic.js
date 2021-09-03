@@ -30,5 +30,8 @@ export class GalacticAge {
     this.lifeExpectency = this.lifeExpectency * 1;
     return this.earthLife = this.lifeExpectency - this.age;
     }
+  getMercuryLifeLeft() {
+      
+    }
 };
 

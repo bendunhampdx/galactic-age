@@ -28,4 +28,8 @@ describe('GalacticAge', () => {
     const earth = new GalacticAge(34, 80);
     expect(earth.getEarthLifeLeft()).toBeCloseTo(46);
   })
+  test('should correctly determine life expectency on mercury', () => {
+    const mercury = new GalacticAge(34, 80);
+    expect(mercury.getMercuryLifeLeft()).toBeCloseTo(11.04);
+  })
 })
