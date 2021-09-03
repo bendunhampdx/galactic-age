@@ -18,7 +18,7 @@
 
 ## Set Up Instructions/Requirements
 * _clone project to your desktop_
-* _in terminal run : get clone https://github.com/bendunhampdx/galactic-calculator.git_
+* _in terminal run : git clone https://github.com/bendunhampdx/galactic-age.git_
 * _navigate to project by running the command cd galactic-calculator_
 * _run command .code to open in VS Code_
 * _run command npm install to install dependencies_
