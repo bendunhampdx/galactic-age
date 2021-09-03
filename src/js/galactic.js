@@ -31,23 +31,32 @@ export class GalacticAge {
   getEarthLifeLeft() {
     this.lifeExpectency = this.lifeExpectency * 1;
     return this.earthLife = this.lifeExpectency - this.age;
-    }
+  };
   getMercuryLifeLeft() {
     this.age = this.age * .24;
     this.lifeExpectency = this.lifeExpectency * .24;
     return this.mercuryLife = this.lifeExpectency - this.age;
-    }
+  };
 
   getVenusLifeLeft() {
     this.age = this.age * .62;
     this.lifeExpectency = this.lifeExpectency * .62;
     return this.venusLife = this.lifeExpectency - this.age;
-    }
+  };
 
   getMarsLifeLeft() {
     this.age = this.age * 1.88;
     this.lifeExpectency = this.lifeExpectency * 1.88;
     return this.marsLife = this.lifeExpectency - this.age;
-    }
+  };
+  getMarsLifeLeft() {
+    this.age = this.age * 1.88;
+    this.lifeExpectency = this.lifeExpectency * 1.88;
+    return this.marsLife = this.lifeExpectency - this.age;
+  };
+  getJupiterLifeLeft() {
+    
+    
+  }
 };
 

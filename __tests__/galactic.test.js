@@ -40,4 +40,8 @@ describe('GalacticAge', () => {
     const mars = new GalacticAge(34, 80);
     expect(mars.getMarsLifeLeft()).toBeCloseTo(86.48);
   })
+  test('should correctly determine life expectency on jupiter', () => {
+    const jupiter = new GalacticAge(34, 80);
+    expect(jupiter.getJupiterLifeLeft()).toBeCloseTo(86.48);
+  })
 })
