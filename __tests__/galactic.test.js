@@ -32,12 +32,12 @@ describe('GalacticAge', () => {
   test('should correctly determine life expectency on Earth', () => {
     const earth = new GalacticAge("earth", 34, 80);
     expect(earth.planet).toEqual("earth");
-    expect(earth.getLife()).toBeCloseTo(80);
+    expect(earth.getLife()).toBeCloseTo(46);
   })
 
   test('should correctly determine life expectency on mercury', () => {
     const mercury = new GalacticAge("mercury", 34, 80);
     expect(mercury.planet).toEqual("mercury");
-    expect(mercury.getLife()).toBeCloseTo(19.2);
+    expect(mercury.getLife()).toBeCloseTo(11.04);
   })
 })
