@@ -24,13 +24,8 @@ describe('GalacticAge', () => {
     expect(jupiter.getJupiterAge()).toBeCloseTo(403.24);
   })
 
-  // test('should correctly determine life expectency on Earth', () => {
-  //   const earth = new GalacticAge(84, 80);
-  //   expect(earth.getLife()).toBeCloseTo(4);
-  // })
-
-  // test('should correctly determine life expectency on mercury', () => {
-  //   const mercury = new GalacticAge(34, 80);
-  //   expect(mercury.getLife()).toBeCloseTo(11.04);
-  // })
+  test('should correctly determine life expectency on earth', () => {
+    const earth = new GalacticAge(34, 80);
+    expect(earth.getEarthLifeLeft()).toBeCloseTo(46);
+  })
 })

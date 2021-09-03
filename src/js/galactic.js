@@ -1,8 +1,8 @@
 export class GalacticAge {
-  constructor(age, lifeExpectency ) {
+  constructor(age, lifeExpectency) {
     this.age = age;
     this.lifeExpectency = lifeExpectency;
-
+    this.earthLife = 0;
   }
 
   getEarthAge() {
@@ -26,24 +26,9 @@ export class GalacticAge {
     return this.age
   };
 
-  // getLife() {
-  //   if (this.planet === "earth") {
-  //     this.age = this.age * 1;
-  //     this.lifeExpectency = this.lifeExpectency * 1;
-  //     if (this.lifeExpectency < this.age) {
-  //       return (this.lifeExpectency - this.age) * -1
-  //     } else {
-  //     return this.lifeExpectency - this.age;
-  //     }
-  //   } else if (this.planet === "mercury") {
-  //     this.age = this.age * .24;
-  //     this.lifeExpectency = this.lifeExpectency * .24;
-  //     if (this.lifeExpectency < this.age) {
-  //       return (this.lifeExpectency - this.age) * -1
-  //     } else {
-  //     return this.lifeExpectency - this.age;
-  //     }
-  //   }
-  // }
+  getEarthLifeLeft() {
+    this.lifeExpectency = this.lifeExpectency * 1;
+    return this.earthLife = this.lifeExpectency - this.age;
+    }
 };
 
