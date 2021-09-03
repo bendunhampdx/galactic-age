@@ -25,6 +25,8 @@ export class GalacticAge {
   getLife() {
     if (this.planet === "earth") {
       return this.lifeExpectency * 1;
+    } else if (this.planet === "mercury") {
+      return this.lifeExpectency * .24;
     }
   }
 };
