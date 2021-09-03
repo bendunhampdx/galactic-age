@@ -1,10 +1,14 @@
 export class GalacticAge {
   constructor(age) {
     this.age = age;
+    // this.venusAge = venusAge;
   }
 
-  getAge() {
-    return this.age * .24;
-  }
+  // getAge() {
+  //   if (this.mercuryAge) {
+  //     return this.mercuryAge * .24;
+  //   } 
+  //   //  this.venusAge * .62;
+  // }
 }
 
