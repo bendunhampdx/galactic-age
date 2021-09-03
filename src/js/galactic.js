@@ -2,10 +2,6 @@ export class GalacticAge {
   constructor(age, lifeExpectency) {
     this.age = age;
     this.lifeExpectency = lifeExpectency;
-    this.earthLife = 0;
-    this.venusLife = 0;
-    this.marsLife = 0;
-    this.jupiterLife = 0;
   }
 
   getEarthAge() {
@@ -33,18 +29,18 @@ export class GalacticAge {
     this.age = this.age * 1;
     this.lifeExpectency = this.lifeExpectency * 1;
     if (this.lifeExpectency < this.age) {
-    return this.earthLife = (this.lifeExpectency - this.age) * -1;
+    return (this.lifeExpectency - this.age) * -1;
     } else {
-      return this.earthLife = this.lifeExpectency - this.age;
+      return this.lifeExpectency - this.age;
     }
   };
   getMercuryLifeLeft() {
     this.age = this.age * .24;
     this.lifeExpectency = this.lifeExpectency * .24;
     if (this.lifeExpectency < this.age) {
-    return this.mercuryLife = (this.lifeExpectency - this.age) * -1;
+    return (this.lifeExpectency - this.age) * -1;
     } else {
-      return this.mercuryLife = this.lifeExpectency - this.age;
+      return this.lifeExpectency - this.age;
     }
   };
 
@@ -52,9 +48,9 @@ export class GalacticAge {
     this.age = this.age * .62;
     this.lifeExpectency = this.lifeExpectency * .62;
     if (this.lifeExpectency < this.age) {
-      return this.venusLife = (this.lifeExpectency - this.age) * -1;
+      return (this.lifeExpectency - this.age) * -1;
       } else {
-        return this.venusLife = this.lifeExpectency - this.age;
+        return this.lifeExpectency - this.age;
       }
     };
 
@@ -62,18 +58,18 @@ export class GalacticAge {
     this.age = this.age * 1.88;
     this.lifeExpectency = this.lifeExpectency * 1.88;
     if (this.lifeExpectency < this.age) {
-      return this.marsLife = (this.lifeExpectency - this.age) * -1;
+      return (this.lifeExpectency - this.age) * -1;
       } else {
-        return this.marsLife = this.lifeExpectency - this.age;
+        return this.lifeExpectency - this.age;
       }
   };
   getJupiterLifeLeft() {
     this.age = this.age * 11.86;
     this.lifeExpectency = this.lifeExpectency * 11.86;
     if (this.lifeExpectency < this.age) {
-      return this.jupiterLife = (this.lifeExpectency - this.age) * -1;
+      return (this.lifeExpectency - this.age) * -1;
       } else {
-        return this.jupiterLife = this.lifeExpectency - this.age;
+        return this.lifeExpectency - this.age;
       }
   }
 };
