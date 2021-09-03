@@ -44,15 +44,19 @@ export class GalacticAge {
     if (this.lifeExpectency < this.age) {
     return this.mercuryLife = (this.lifeExpectency - this.age) * -1;
     } else {
-      return this.earthLife = this.lifeExpectency - this.age;
+      return this.mercuryLife = this.lifeExpectency - this.age;
     }
   };
 
   getVenusLifeLeft() {
     this.age = this.age * .62;
     this.lifeExpectency = this.lifeExpectency * .62;
-    return this.venusLife = this.lifeExpectency - this.age;
-  };
+    if (this.lifeExpectency < this.age) {
+      return this.venusLife = (this.lifeExpectency - this.age) * -1;
+      } else {
+        return this.venusLife = this.lifeExpectency - this.age;
+      }
+    };
 
   getMarsLifeLeft() {
     this.age = this.age * 1.88;
