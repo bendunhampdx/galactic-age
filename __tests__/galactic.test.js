@@ -18,4 +18,9 @@ describe('GalacticAge', () => {
     expect(venus.planet).toEqual("venus");
     expect(venus.getAge()).toBeCloseTo(21.08);
   })
+  test('should correctly determine users age on mars', () => {
+    const mars = new GalacticAge("mars", 34);
+    expect(mars.planet).toEqual("mars");
+    expect(mars.getAge()).toBeCloseTo(63.92);
+  })
 })
